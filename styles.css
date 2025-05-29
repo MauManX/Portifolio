@@ -1,0 +1,385 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Tiny5&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    width: 100vw;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    font-family: Tiny5, Tomorrow, sans-serif;
+    color: #333;
+    image-rendering: pixelated;
+    margin: 0 0 0 0;
+    overflow-x: hidden;
+}
+
+a {
+    color: wheat;
+}
+a:hover {
+    color: goldenrod;
+}
+
+.item {
+    margin-left: 3vw;
+    text-align: left;
+    font-size: 5vw;
+    text-shadow: 0 0 1vw white;
+}
+
+.blink {
+    animation: blink 1s steps(1, end) infinite;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes tvfx{
+	to { filter: saturate(110%); }
+}
+
+.art {
+    margin-top: 5%;
+    position: relative;
+    left: 10%;
+    width: 76%;
+    background-color: rgba(47, 79, 79, 0.8);
+    border-radius: 1vw;
+    padding: 2%;
+}
+.artTitle {
+    text-align: center;
+    font-size: 6vw;
+    color: mediumslateblue;
+    text-shadow: 
+        0.3vw 0.3vw 0 black,
+        -0.3vw 0.3vw 0 black,
+        -0.3vw -0.3vw 0 black,
+        0.3vw -0.3vw 0 black;
+}
+
+.project {
+    margin-top: 5%;
+    position: relative;
+    left: 10%;
+    width: 76%;
+    background-color: rgba(0,128,255,0.8);
+    border-radius: 1vw;
+    padding: 2%;
+}
+.projectTitle {
+    text-align: center;
+    font-size: 6vw;
+    color: deepskyblue;
+    text-shadow: 
+        0.3vw 0.3vw 0 black,
+        -0.3vw 0.3vw 0 black,
+        -0.3vw -0.3vw 0 black,
+        0.3vw -0.3vw 0 black;
+}
+
+.game {
+    margin-top: 5%;
+    position: relative;
+    left: 10%;
+    width: 76%;
+    background-color: rgba(255,128,0,0.8);
+    border-radius: 1vw;
+    padding: 2%;
+}
+.gameTitle {
+    text-align: center;
+    font-size: 6vw;
+    color: goldenrod;
+    text-shadow: 
+        0.3vw 0.3vw 0 black,
+        -0.3vw 0.3vw 0 black,
+        -0.3vw -0.3vw 0 black,
+        0.3vw -0.3vw 0 black;
+}
+.gameImgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 15vw;
+}
+.gameImg {
+    width: 20vw;
+    aspect-ratio: auto 16/9;
+    background-size: cover;
+    image-rendering: auto;
+    border-radius: 1vw;
+    margin: 1%;
+}
+.gameImg:hover {
+    animation: shake 0.1s;
+}
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-1vw, -1vw); }
+    50% { transform: translate(1vw, -1vw); }
+    75% { transform: translate(-1vw, 1vw); }
+    100% { transform: translate(0, 0); }
+}
+.gameDesc {
+    width: 100%;
+    font-size: 3vw;
+    color: white;
+    text-shadow: 0 0 1vw white;
+    text-align: justify;
+}
+
+.space {
+    padding: 3%;
+}
+
+.description {
+    position: relative;
+    left: 10%;
+    width: 76%;
+    font-size: 3vw;
+    color: white;
+    text-align: justify;
+    text-shadow: 0 0 1vw white;
+    background-color: rgba(90,90,255,0.8);
+    border-radius: 1vw;
+    padding: 2%;
+    margin-top: 2vw;
+}
+
+#screen1 {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    background-image: url("./img/border0002.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: 25vw;
+    background-color: goldenrod;
+}
+
+#title {
+    width: 60vw;
+    aspect-ratio: auto 1/0.375;
+    background-image: url("./img/title0002.gif");
+    background-size: cover;
+    margin: 0 auto;
+}
+
+#subtitle {
+    font-size: 4vw;
+}
+
+#letsStart {
+    position: relative;
+    top: 3vw;
+    font-size: 8vw;
+    color: wheat;
+    text-shadow: 0 0 1vw wheat;
+}
+
+#copyright {
+    background-color: goldenrod;
+    font-size: 4vw;
+    position: relative;
+    top: 6vw;
+}
+
+#screen2 {
+    font-size: 16vw;
+    color: white;
+    text-shadow: 
+        1vw 1vw 0 black,
+        -1vw 1vw 0 black,
+        -1vw -1vw 0 black,
+        1vw -1vw 0 black;
+    width: 100%;
+    aspect-ratio: auto 1/1.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-image: url("./img/bgZ.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#screen3 {
+    color: white;
+    text-shadow: 0 0 1vw white;
+    width: 100%;
+    background-color: steelblue;
+    align-content: center;
+}
+
+#about {
+    margin-top: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 10%;
+    width: 80%;
+    text-align: justify;
+}
+
+#myFace {
+    width: 16vw;
+    height: 20vw;
+    background-image: url("./img/me.jpg");
+    background-size: 16vw;
+    image-rendering: auto;
+    border-radius: 2vw;
+    box-shadow: 2vw 2vw 2vw black;
+}
+
+#loop {
+    position: relative;
+    left: 60%;
+    top: 80%;
+    width: 6vw;
+    aspect-ratio: auto 1/1;
+    background-image: url("./img/CSJ_Hero001.gif");
+    background-size: cover;
+    image-rendering: pixelated;
+    animation: spin 10s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#txt1 {
+    margin-left: 4%;
+    margin-top: -3%;
+    color: white;
+    font-size: 3vw;
+    width: 76%;
+}
+
+#txt2 {
+    margin-bottom: 4%;
+    color: white;
+    font-size: 3vw;
+    width: 100%;
+}
+
+#screen4 {
+    color: white;
+    width: 100%;
+    background-color: black;
+    background-image: url("./img/games.png");
+    background-size: cover;
+    background-attachment: fixed;
+    filter: saturate(100%);
+    animation: tvfx 50ms infinite alternate;
+}
+
+#bigPic {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vw;
+    background-color: rgba(0,0,0,0.8);
+    visibility: hidden;
+    z-index: 10000;
+}
+#pic {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 80vw;
+    transform: translate(-50%, -50%);
+    image-rendering: auto;
+    border-radius: 2vw;
+    border: 1vw solid white;
+}
+
+#screen5 {
+    color: white;
+    text-shadow: 0 0 1vw white;
+    width: 100%;
+    background-color: firebrick;
+    align-content: center;
+}
+
+#txt3 {
+    margin-top: -3%;
+    color: white;
+    font-size: 3vw;
+    width: 71%;
+}
+.picInText {
+    width: 20vw;
+    aspect-ratio: auto 1/1;
+    background-position: center;
+    background-size: cover;
+    image-rendering: auto;
+    border-radius: 2vw;
+    box-shadow: 2vw 2vw 2vw black;
+}
+
+#screen6 {
+    color: white;
+    width: 100%;
+    background-image: url("./img/projects.png");
+    background-size: cover;
+    background-attachment: fixed;
+    filter: saturate(100%);
+    animation: tvfx 50ms infinite alternate;
+}
+
+.projImg {
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 20vw;
+    aspect-ratio: auto 16/9;
+    background-size: cover;
+    image-rendering: auto;
+    border-radius: 1vw;
+    transition: rotate 0.1s ease-in-out, margin-left 0.1s ease-in-out, margin-right 0.1s ease-in-out;
+}
+.projImg:hover {
+    margin-left: 7%;
+    margin-right: 7%;
+    rotate: 0deg; 
+}
+.projImg:not(:hover) {
+    margin-left: -5%;
+    margin-right: -5%;
+    rotate: -5deg; 
+}
+
+#screen7 {
+    color: white;
+    text-shadow: 0 0 1vw white;
+    width: 100%;
+    background-color: darkgreen;
+    align-content: center;
+}
+
+#screen8 {
+    color: white;
+    width: 100%;
+    background-image: url("./img/pixelarts.png");
+    background-size: cover;
+    background-attachment: fixed;
+    filter: saturate(100%);
+    animation: tvfx 50ms infinite alternate;
+}
+
+#screen9 {
+    color: white;
+    text-shadow: 0 0 1vw white;
+    width: 100%;
+    background-color: saddlebrown;
+    background-image: url("./img/border0002.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: 25vw;
+    align-content: center;
+}

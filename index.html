@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MauManX's Portifolio</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="bigPic">
+        <img id="pic" src="" onclick="showPic('')" >
+    </div>
+    <nav></nav>
+    <main>
+        <header id="screen1">
+            <div id="title"></div><br>
+            <div id="subtitle">.: version 2025.05.28 :.</div>
+            <div id="letsStart" class="blink">Let's Start !!!</div>
+            <div id="copyright">.: mauricio horiuchi - 2025 :.</div>
+        </header>
+        <section id="screen2">
+            <div>WELCOME<br>TO<br>MY<br>WORLD</div>
+        </section>
+        <section id="screen3">
+            <div class="item">> ABOUT ME<span class="blink">_</span></div>
+            <div id="about">
+                <div id="myFace" alt="IT'S ME... MAURÍCIO!!!">
+                    <div id="loop" alt="LoopBoy"></div>
+                </div>
+                <div id="txt1">
+                    <p>Olá! Me chamo Maurício 'MauManX' Horiuchi e sou Tecnólogo em Processamento de Dados.</p>
+                    <p>Desenvolvo softwares e websites desde 2000, e agora estou me desbravando no mundo do GameDev.</p>
+                </div>
+                <div id="txt2">
+                    <p>Sempre tinha interesse em ingressar na área, mas havia pouco acesso aos materiais e ferramentas para desenvolvimento de jogos. Até que, de uns 15 anos pra cá, "o jogo virou" e surgiram várias ferramentas e materiais na Internet, facilitando a vida dos GameDevs.</p>
+                    <p>Mesmo assim, comecei programando no HTML5+CSS+JS utilizando o Canvas "na raça", para entender melhor a lógica de programação de um jogo. Então, resolvi mexer em game engines como Unreal, Unity, GameMaker, até conhecer o Godot a qual escolhi como minha principal ferramenta para criação de jogos.</p>
+                    <p>Estou aprendendo Unity, pois é uma das engines que as empresas mais procuram, mas enquanto não aprendo por completo, a Godot se manterá como a preferida.</p>
+                    <p>Ah! Estou correndo para aprender IA também, pois é o que vai ajudar em muito todas as partes do desenvolvimento de jogos.</p>
+                </div>
+            </div>
+        </section>
+        <section id="screen4">
+            <div class="item">> MY GAMES<span class="blink">_</span></div>
+            <div class="description">
+                Aqui temos 3 jogos publicados para GameJams e 1 criado numa imersão com JS, onde consigo demonstrar um pouco das minhas habilidades com criação de jogos.<br>
+                Todas artes, animações, design, desenvolvimento, músicas* e SFX foram criadas por mim.<br>
+                *(com exceção do "MMX Carnival Simulator 2023" a qual peguei a música do site FreeSound.org)<br>
+                Todos estão publicados no Itch.io: <a target="_blank" href="https://maumanx.itch.io/" target="_blank">https://maumanx.itch.io/</a>
+            </div>
+            <div class="game">
+                <div class="gameTitle">LoopBoy</div>
+                <div class="gameImgs">
+                    <div class="gameImg" style="background-image: url('./img/games/game1title.png');" onclick="showPic('./img/games/game1title.png')"></div>
+                    <div class="gameImg" style="background-image: url('./img/games/game1_1.png');" onclick="showPic('./img/games/game1_1.png')"></div>
+                    <div class="gameImg" style="background-image: url('./img/games/game1_2.png');" onclick="showPic('./img/games/game1_2.png')"></div>
+                </div>
+                <div class="gameDesc">
+                    LoopBoy é um jogo de plataforma 2D onde você controla um personagem que deve coletar itens para poder escapar de um mundo em constante loop.<br>
+                    O jogo foi desenvolvido para a GameJam da CSJ com o tema foi "Loop Infinito", e foi um dos finalistas como "Menção Honrosa" entre mais de 100 jogos participantes.<br>
+                    <a target="_blank" href="https://www.youtube.com/live/KIuxNVZSLdo?si=tKTBQEFsDUBr_ARq">Link</a> do Wenes jogando LoopBoy (pule o vídeo para 23:25)<br>
+                    <a target="_blank" href="https://youtu.be/9ZHJ0ILCG2U?si=n7absDIDkKe9llgz">Link</a> do LoopBoy sendo selecionado como "Menção Honrosa" (pule o vídeo para 2:40)
+                </div>
+            </div>
+            <div class="game">
+                <div class="gameTitle">Tchibum Park</div>
+                <div class="gameImgs">
+                    <div class="gameImg" style="background-image: url('./img/games/game2title.png');" onclick="showPic('./img/games/game2title.png')"></div>
+                    <div class="gameImg" style="background-image: url('./img/games/game2_1.png');" onclick="showPic('./img/games/game2_1.png')"></div>
+                    <div class="gameImg" style="background-image: url('./img/games/game2_2.png');" onclick="showPic('./img/games/game2_2.png')"></div>
+                </div>
+                <div class="gameDesc">
+                    Tchibum Park é um jogo de reflexo num parque aquático, onde deve manter o público organizado, pressionando apenas 1 botão.
+                </div>
+            </div>
+            <div class="game">
+                <div class="gameTitle">MMX Carnival Simulator 2023</div>
+                <div class="gameImgs">
+                    <div class="gameImg" style="background-image: url('./img/games/game3title.png');" onclick="showPic('./img/games/game3title.png')"></div>
+                    <div class="gameImg" style="background-image: url('./img/games/game3_1.png');" onclick="showPic('./img/games/game3_1.png')"></div>
+                    <div class="gameImg" style="background-image: url('./img/games/game3_2.png');" onclick="showPic('./img/games/game3_2.png')"></div>
+                </div>
+                <div class="gameDesc">
+                    MMX Carnival Simulator 2023 é um jogo de simulação onde você deve gerenciar um bloquinho de carnaval, gerenciando a diversão, segurança, limpeza, entre outras coisas dos foliões.<br>
+                    O jogo foi desenvolvido para a GameJam da CSJ com o tema "Carnaval", e foi o vencedor da GameJam que teve... 1 jogo participante. &#128579;<br>
+                    Assim... não dá pra dizer que não ganhou, né? &#128517;
+                </div>
+            </div>
+            <div class="game">
+                <div class="gameTitle">Perdidos na Floresta</div>
+                <div class="gameImgs">
+                    <div class="gameImg" style="background-image: url('./img/games/game4title.png');" onclick="showPic('./img/games/game4title.png')"></div>
+                    <div class="gameImg" style="background-image: url('./img/games/game4_1.png');" onclick="showPic('./img/games/game4_1.png')"></div>
+                    <div class="gameImg" style="background-image: url('./img/games/game4_2.png');" onclick="showPic('./img/games/game4_2.png')"></div>
+                </div>
+                <div class="gameDesc">
+                    Perdidos na Floresta é um InfinityRun criado na Imersão Alura de JS GameDev utilizando o P5.js.<br>
+                    O jogo tem como protagonistas o Leon e Nilce do canal "Coisa de Nerd", que divulgaram essa imersão. Todos sons e música, foram extraídos de vídeos do próprio canal e possui várias referências sobre eles.<br>
+                    A arte e programação foram feitas por mim, e o jogo foi desenvolvido durante o evento.<br>
+                    Você pode jogá-lo nesse <a target="_blank" href="https://editor.p5js.org/MMX/full/YkcdHxjFG">link</a>.
+                </div>
+            </div>
+            <br><br>
+        </section>
+        <section id="screen5">
+            <div class="item">> MY ABILITIES<span class="blink">_</span></div>
+            <div id="about">
+                <div id="txt3">
+                    <p>Eu sempre gostei de mexer em ferramentas, que me ajudam na criação das coisas que quero fazer. Então, desde muito jovem, fuçava de tudo do que precisa para alcançar meus objetivos.</p>
+                </div>
+                <div class="picInText" style="background-image: url('./img/tools0001.png'); margin: 0 0 0 2vw;"></div>
+                <div id="txt2">
+                    <p>No mundo da criação de jogos digitais, minhas principais ferramentas são o Godot como a engine, Aseprite para pixel art e animação 2D e Blender para 3D. Não vou negar, música e sfx  não é meu forte, mas consigo fazer o básico utilizando apps gratuítos disponíveis online (e ajusto com Audacity quando necessário).</p>
+                    <p>Como profissão, escolhi ser analista programador, então utilizo bastante IDEs tipo VSCode com banco de dados SQL para criar apps e páginas web (HTML, CSS, JS, entre outros frameworks). E agora crio scripts para Unity, que estou constantemente estudando para um dia ficar 'pro' nessa engine.</p>
+                    <p>Fora essa área de GameDev, também utilizo Excel (pacote Office em geral), editores de imagem/vetorial/3D, editores de audio e video, entre outros que acabam precisando usar ocasionalmente. Mas no final ajudam no GameDev de alguma forma.</p>
+                </div>
+            </div>
+        </section>
+        <section id="screen6">
+            <div class="item">> MY PROJECTS<span class="blink">_</span></div>
+            <div class="description">
+                Aqui estão alguns dos meus projetos inacabados ou que fiz apenas para estudo, mas que vale a pena mostrar.
+            </div>
+            <div class="project">
+                <div class="projectTitle">Contra 2.0</div>
+                <div class="gameImgs">
+                    <div class="projImg" style="left:  10%; background-image: url('./img/projects/contra1.png');" onclick="showPic('./img/projects/contra1.png')"></div>
+                    <div class="projImg" style="left:   5%; background-image: url('./img/projects/contra2.png');" onclick="showPic('./img/projects/contra2.png')"></div>
+                    <div class="projImg" style="left:    0; background-image: url('./img/projects/contra5.png');" onclick="showPic('./img/projects/contra5.png')"></div>
+                    <div class="projImg" style="left:  -5%; background-image: url('./img/projects/contra3.png');" onclick="showPic('./img/projects/contra3.png')"></div>
+                    <div class="projImg" style="left: -10%; background-image: url('./img/projects/contra4.png');" onclick="showPic('./img/projects/contra4.png')"></div>
+                </div>
+                <div class="gameDesc">
+                    Para treinar o desenvolvimento de jogos 2d de plataforma, resolvi fazer uma versão do Contra, mas com o meu estilo de arte.<br>
+                    Tenho interesse em terminar o jogo, mas por enquanto só possui a 1ª fase "quase" terminada. &#128540;<br>
+                    O jogo é um projeto pessoal, e não tem relação com a Konami ou qualquer outra empresa.
+                </div>
+                <div style="display: flex;">
+                    <div class="gameDesc" style="margin-top: 2vh; width: 60%;">
+                        Aqui estão alguns materiais como a 2ª fase e o sprite do boss Gromaides, que ainda serão implementados no jogo.
+                    </div>
+                    <div class="picInText" style="margin-left: 2%; width: 20%; background-image: url('./img/projects/contra2b.png');" onclick="showPic('./img/projects/contra2b.png')"></div>
+                    <div class="picInText" style="margin-left: 2%; width: 20%; background-image: url('./img/projects/contra1b.png');" onclick="showPic('./img/projects/contra1b.png')"></div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="projectTitle">Deliver Metal</div>
+                <div class="gameImgs">
+                    <div class="projImg" style="left:  10%; background-image: url('./img/projects/delivermetal4.png');" onclick="showPic('./img/projects/delivermetal4.png')"></div>
+                    <div class="projImg" style="left:   5%; background-image: url('./img/projects/delivermetal2.png');" onclick="showPic('./img/projects/delivermetal2.png')"></div>
+                    <div class="projImg" style="left:    0; background-image: url('./img/projects/delivermetal5.png');" onclick="showPic('./img/projects/delivermetal5.png')"></div>
+                    <div class="projImg" style="left:  -5%; background-image: url('./img/projects/delivermetal3.png');" onclick="showPic('./img/projects/delivermetal3.png')"></div>
+                    <div class="projImg" style="left: -10%; background-image: url('./img/projects/delivermetal1.png');" onclick="showPic('./img/projects/delivermetal1.png')"></div>
+                </div>
+                <div class="gameDesc">
+                    Esse é o Deliver Metal 	&#129304;, um jogo que estava sendo feito para uma GameJam, mas acabou não dando tempo de terminar (estava uns 90% terminado &#128557;).<br>
+                    Nele, você controla um motoboy roqueiro, que deve entregar uma encomenta extremamente instável capaz de destruir o mundo. Por isso, precisa tomar cuidado com todas ações feitas durante o caminho, com seu trânsito caótico e ladrões querendo roubar sua encomenda.<br>
+                    Pretendo terminar de desenvolvê-lo, mas terei que refazê-lo do zero, pois foi feito no Godot 3 (assim como o Contra, aliás). Além de implementar as partes faltantes e fazer os ajustes dos bugs, que sempre tem. &#128517;<br>
+                </div>
+            </div>
+            <div class="project">
+                <div class="projectTitle">Pignic Tales</div>
+                <div class="gameImgs">
+                    <div class="projImg" style="left:   5%; background-image: url('./img/projects/pignic4.png');" onclick="showPic('./img/projects/pignic4.png')"></div>
+                    <div class="projImg" style="left:   0%; background-image: url('./img/projects/pignic2.png');" onclick="showPic('./img/projects/pignic2.png')"></div>
+                    <div class="projImg" style="left:  -5%; background-image: url('./img/projects/pignic1.png');" onclick="showPic('./img/projects/pignic1.png')"></div>
+                    <div class="projImg" style="left: -10%; background-image: url('./img/projects/pignic3.png');" onclick="showPic('./img/projects/pignic3.png')"></div>
+                </div>
+                <div class="gameDesc">
+                    Este jogo é especial, apesar de nunca ter terminado. Inicialmente chamado de Lili's Pignic, foi o 1º projeto a ser desenvolvido quando resolvi ser GameDev.<br>
+                    P.S.: Os porquinhos da índia são todos os meus pets, e o jogo é uma homenagem a eles. &#10084;&#65039;<br>
+                </div>
+                <div class="gameImgs">
+                    <div class="projImg" style="left:   5%; background-image: url('./img/projects/pignic3a.png');" onclick="showPic('./img/projects/pignic3a.png')"></div>
+                    <div class="projImg" style="left:   0%; background-image: url('./img/projects/pignic1a.png');" onclick="showPic('./img/projects/pignic1a.png')"></div>
+                    <div class="projImg" style="left:  -5%; background-image: url('./img/projects/pignic2a.png');" onclick="showPic('./img/projects/pignic2a.png')"></div>
+                </div>
+                <div class="gameDesc">
+                    Começei fazendo em Canvas puro do HTML, programando diretamente no JS, com o intúito de entender melhor a lógica de programação de um jogo. Depois de aprender a usar o Godot, decidi refazê-lo com todo potencial da engine, além de implementar vários pontos e deixá-lo mais profissional.<br>
+                    O jogo é bem simples, onde você deve pegar o máximo de frutas antes do tempo acabar, e os porquinhos da índia "atrapalham" comendo essas frutas. Há várias mecânicas para prolongar o jogos, assim como dificultar o jogador a alcançar os objetivos.<br>
+                </div>
+            </div>
+            <div class="project">
+                <div class="projectTitle">Outros Projetos</div>
+                <div class="gameDesc">
+                    Tenho vários outros projetos em aberto, tanto inacabados quanto para aprender a usar as ferramentas como o Godot, Aseprite, Blender, entre outros. Eles ainda estão em desenvolvimento, inacabado ou parado, mas quem sabe um dia não termino e disponibilizo para todos usufruírem? &#128521;<br>
+                </div>
+                <div class="gameImgs">
+                    <div class="projImg" style="left:  10%; background-image: url('./img/projects/onisfury1.png');" onclick="showPic('./img/projects/onisfury1.png')"></div>
+                    <div class="projImg" style="left:   5%; background-image: url('./img/projects/onisfury2.png');" onclick="showPic('./img/projects/onisfury2.png')"></div>
+                    <div class="projImg" style="left:   0%; background-image: url('./img/projects/beringela1.png');" onclick="showPic('./img/projects/beringela1.png')"></div>
+                    <div class="projImg" style="left:  -5%; background-image: url('./img/projects/copburger1.png');" onclick="showPic('./img/projects/copburger1.png')"></div>
+                    <div class="projImg" style="left: -10%; background-image: url('./img/projects/megaman1.png');" onclick="showPic('./img/projects/megaman1.png')"></div>
+                </div>
+            </div>
+            <br><br>
+        </section>
+        <section id="screen7">
+            <div class="item">> MY HISTORY<span class="blink">_</span></div>
+            <div id="about">
+                <div id="txt2">
+                    <p>Minha história com jogos começou muito cedo, quando meu pai tinha um Atari 2600, e depois outros consoles como o TRS-80, Apple][, NES, entre outros. Eu jogava muito todos esses jogos, e isso me fez querer fazer meus próprios jogos um dia.</p>
+                    <p>Com o tempo, fui aprendendo a programar em VB6 na faculdade, e comecei a fazer algumas "bizarrices" com ele, como point n' click e animações simples. Aprendi a desenhar no CorelDRAW, Photoshop e até no Paintbrush (Paint para os mais novos). As animações aprendi assistindo desenhos animados e estorinhas feitas com diversas técnicas de animação.</p>
+                </div>
+                <div id="txt3">
+                    Como eu sempre gostei de desenhar (não tão bem assim, mas acho que está acima da média &#128125;), comecei a desenhar numas folhas de cadernos que sobrava da escola, minhas próprias fases de jogos que jogava, além de jogos que eu acabava inventando. Todos com mecânicas, inimigos, itens, personagens e as vezes tinha até historinhas, tudo ainda bem simples (tinha menos de 10 anos), mas com o tempo foi melhorando tudo (arte, design, desafios, puzzles, etc.).
+                </div>
+                <div class="picInText" style="background-image: url('./img/caderno.png'); margin: 0 0 0 2vw;"></div>
+                <div id="txt2"><br>
+                    Isso tudo foi feito jogando, vendo revistas estrangeiras sobre jogos (mal lia direito, ainda mais em inglês ou japonês &#129327;), observando e teorizando praticamente sozinho, sem material de estudo (na época era impossível achar algo do tipo).<br><br>
+                    Então, entrei numa faculdade onde aprendi a programar em VB6 e comecei a fazer algumas "bizarrices" com ele, do tipo um point n' click pra sair de um quarto e um retângulo soltar hadouken ao fazer meia-lua + soco... além de muitos outros testes apenas no intuito de aprender mecânicas de jogo e lógicas de programação. As artes eram feitas no CorelDRAW, Photoshop e até no Paintbrush (Paint para os mais novos).<br><br>
+                    As animações, eu aprendi assistindo muito desenho animado e estorinhas feitas com diversas técnicas de animação. Houve um momento em que usei muito o Flash (antes de "queimarem o filme dele"), mas foi mais para criar artes interativas para sites, e muito pouco para jogos, porém aprendi bastante a trabalhar com timeline.<br><br>
+                    Depois de passar pelo longo período de aprendizados e experimentações, tipo um Tetris no Excel &#129322;... surgiram materiais e ferramentas que facilitam a criação de jogos e parti de vez para o mundo do GameDev.<br><br>
+                </div>
+            </div>
+        </section>
+        <section id="screen8">
+            <div class="item">> MY ARTS<span class="blink">_</span></div>
+            <div class="description">
+                Aqui encontrarão algumas artes feitas de várias formas e utilizando várias ferramentas. Tem desenho pixelart, arte digital, vetorial, 3D.
+            </div>
+            <div class="art">
+                <div class="artTitle">PixelArt</div>
+                <div class="gameDesc">
+                    Faço qualquer tipo de arte pixelada, desde sprites, animações, cenários, até ícones e logotipos. Abaixo estão alguns exemplos de artes pixeladas.
+                </div>
+                <div class="gameImgs">
+                    <div class="projImg" style="left:  10%; background-image: url('./img/arts/art01.png');" onclick="showPic('./img/arts/art01.png')"></div>
+                    <div class="projImg" style="left:   5%; background-image: url('./img/arts/art02.png');" onclick="showPic('./img/arts/art02.png')"></div>
+                    <div class="projImg" style="left:    0; background-image: url('./img/arts/art03.png');" onclick="showPic('./img/arts/art03.png')"></div>
+                    <div class="projImg" style="left:  -5%; background-image: url('./img/arts/art04.png');" onclick="showPic('./img/arts/art04.png')"></div>
+                    <div class="projImg" style="left: -10%; background-image: url('./img/arts/art05.png');" onclick="showPic('./img/arts/art05.png')"></div>
+                </div>
+            </div>
+            <div class="art">
+                <div class="artTitle">Vetorial</div>
+                <div class="gameDesc">
+                    Desenhos vetoriais aprendi mais por ser uma alternativa "mais fácil" de desenhar digitalmente, pois automatizava muitos processos, como traçar linhas, curvas, pinturas, etc. Abaixo estão alguns exemplos de artes vetoriais.
+                </div>
+                <div class="gameImgs">
+                    <div class="projImg" style="left:  10%; background-image: url('./img/arts/vector01.png');" onclick="showPic('./img/arts/vector01.png')"></div>
+                    <div class="projImg" style="left:   5%; background-image: url('./img/arts/vector02.png');" onclick="showPic('./img/arts/vector02.png')"></div>
+                    <div class="projImg" style="left:    0; background-image: url('./img/arts/vector03.png');" onclick="showPic('./img/arts/vector03.png')"></div>
+                    <div class="projImg" style="left:  -5%; background-image: url('./img/arts/vector04.png');" onclick="showPic('./img/arts/vector04.png')"></div>
+                    <div class="projImg" style="left: -10%; background-image: url('./img/arts/vector05.png');" onclick="showPic('./img/arts/vector05.png')"></div>
+                </div>
+            </div>
+            <div class="art">
+                <div class="artTitle">3D</div>
+                <div class="gameDesc">
+                    Eu não negar, 3D não mexi muito... mas aprendi o básico para fazer algumas coisas como modelagem, texturização e renderização. Abaixo estão alguns exemplos de artes 3D.
+                </div>
+                <div class="gameImgs">
+                    <div class="projImg" style="left:  10%; background-image: url('./img/arts/3d01.png');" onclick="showPic('./img/arts/3d01.png')"></div>
+                    <div class="projImg" style="left:   5%; background-image: url('./img/arts/3d02.png');" onclick="showPic('./img/arts/3d02.png')"></div>
+                    <div class="projImg" style="left:    0; background-image: url('./img/arts/3d03.png');" onclick="showPic('./img/arts/3d03.png')"></div>
+                    <div class="projImg" style="left:  -5%; background-image: url('./img/arts/3d04.png');" onclick="showPic('./img/arts/3d04.png')"></div>
+                    <div class="projImg" style="left: -10%; background-image: url('./img/arts/3d05.png');" onclick="showPic('./img/arts/3d05.png')"></div>
+                </div>
+            </div>
+            <div class="art">
+                <div class="artTitle">Desenho Digital</div>
+                <div class="gameDesc">
+                    Paintbrush... bom, também usei pra desenhar algumas coisas (obs.: o colorido de um dos desenhos foi feito no Photoshop). Abaixo estão alguns exemplos de artes digitais.
+                </div>
+                <div class="gameImgs">
+                    <div class="projImg" style="left:   5%; background-image: url('./img/arts/draw01.png');" onclick="showPic('./img/arts/draw01.png')"></div>
+                    <div class="projImg" style="left:    0; background-image: url('./img/arts/draw02.png');" onclick="showPic('./img/arts/draw02.png')"></div>
+                    <div class="projImg" style="left:  -5%; background-image: url('./img/arts/draw03.png');" onclick="showPic('./img/arts/draw03.png')"></div>
+                </div>
+            </div>
+            <br><br>
+        </section>
+        <footer id="screen9">
+            <div class="item">> LINKS & CONTACT<span class="blink">_</span></div>
+            <div id="about">
+                <div id="txt2">
+                    <p>Aqui estão links de meu perfil no Linkedin, Itch.io e Github.</p><br>
+                    <a target="_blank" href="https://www.linkedin.com/in/mauricio-horiuchi/">https://www.linkedin.com/in/mauricio-horiuchi/</a><br>
+                    <a target="_blank" href="https://mmxgames.itch.io/">https://mmxgames.itch.io/</a><br>
+                    <a target="_blank" href="https://github.com/MauManX">https://github.com/MauManX</a><br>
+                    <br>
+                    <p>Se desejar entrar em contato comigo,<br>pode me enviar um e-mail para <a href="mailto:mondolokoh@gmail.com">mondolokoh@gmail.com</a>.</p><br>
+                    <div style="margin-top: -4vw; width: 10vw; aspect-ratio: auto 1/1; background-image: url('./img/pato.png'); background-size: cover;" alt="Médico de Galinha"></div>
+                    <div style="margin-top: -3vw; margin-left: 7vw; margin-bottom: 4vw;">Agradeço pelo seu tempo e interesse!</div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+<script src="./scripts.js"></script>
+</html>
